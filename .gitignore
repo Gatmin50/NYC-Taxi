@@ -1,1 +1,9 @@
-yellow_tripdata_2025-02.csv
+# Ignorar todo el contenido de la carpeta Data
+concurrent-loader/Data/*
+
+# PERO... no ignorar (excepción) el archivo de zonas
+!concurrent-loader/Data/taxi_zone_lookup.csv
+
+# Opcional: Ignorar también carpetas de compilación de Java
+target/
+*.class
